@@ -1,0 +1,3 @@
+pyhamcrest~=2.0.3
+httmock~=1.4.0
+coverage~=6.4

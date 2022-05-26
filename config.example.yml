@@ -1,0 +1,12 @@
+credential:
+  username: USERNAME
+  password: PASSWORD
+
+endpoints:
+  protocol: https
+  base: www.hover.com
+  login: /signin
+  list_domains: /api/domains
+  list_entries: /api/domains/{domain}/dns
+  update_entry: &update_entry /api/control_panel/dns
+  create_entry: *update_entry
