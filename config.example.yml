@@ -5,8 +5,9 @@ credential:
 endpoints:
   protocol: https
   base: www.hover.com
-  login: /signin
-  list_domains: /api/domains
-  list_entries: /api/domains/{domain}/dns
+  establish: /signin
+  login: /signin/auth.json
+  list_domains: /api/control_panel/domains
+  list_entries: /api/control_panel/dns/{domain}
   update_entry: &update_entry /api/control_panel/dns
   create_entry: *update_entry
